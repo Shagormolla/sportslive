@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Hub</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <h1>SportsHub</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#scores">Live Scores</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div>
+      <h2>Welcome to SportsHub</h2>
+      <p>Your #1 Source for Live Sports Updates</p>
+      <button onclick="alert('Thanks for joining SportsHub!')">Join Now</button>
+    </div>
+  </section>
+
+  <!-- Live Score -->
+  <section class="scores" id="scores">
+    <h3>Live Score</h3>
+    <div class="score-box" id="scoreBox">
+      Loading live score...
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section class="news" id="news">
+    <h3>Latest Sports News</h3>
+    <div class="news-grid">
+      <div class="card">
+        <img src="picture/p4.png" alt="">
+        <div class="content">
+          <h4>Football Championship</h4>
+        </div>
+      </div>
+      <div class="card">
+        <img src="picture/p14.jpeg" alt="">
+        <div class="content">
+          <h4>MMA</h4>
+        </div>
+      </div>
+      <div class="card">
+        <img src="picture/p13.jpeg" alt="">
+        <div class="content">
+          <h4>Boxing</h4>
+        </div>
+      </div>
+      <div class="card">
+        <img src="picture/p12.jpeg" alt="">
+        <div class="content">
+          <h4>WWE</h4>
+        </div>
+      </div>
+      <div class="card">
+        <img src="picture/p2.png" alt="">
+        <div class="content">
+          <h4>Fighting</h4>
+        </div>
+      </div>
+      <div class="card">
+        <img src="picture/p10.jpeg" alt="">
+        <div class="content">
+          <h4>Tennis</h4>
+        </div>
+      </div>
+      <div class="card">
+        <img src="picture/p3.png" alt="">
+        <div class="content">
+          <h4>American Football</h4>
+        </div>
+      </div>
+      <div class="card">
+        <img src="picture/p5.jpeg" alt="">
+        <div class="content">
+          <h4>Basketball</h4>
+        </div>
+      </div>
+      <div class="card">
+        <img src="picture/p6.jpeg" alt="">
+        <div class="content">
+          <h4>Rugby</h4>
+        </div>
+      </div>
+      <div class="card">
+        <img src="picture/p7.jpeg" alt="">
+        <div class="content">
+          <h4>Moto GP</h4>
+        </div>
+      </div>
+      <div class="card">
+        <img src="picture/p8.jpeg" alt="">
+        <div class="content">
+          <h4>Aussie Rules</h4>
+        </div>
+      </div>
+      <div class="card">
+        <img src="picture/p9.jpeg" alt="">
+        <div class="content">
+          <h4>Motorsports</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>&copy; 2025 SportsHub. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Fake live score update
+    const scoreBox = document.getElementById("scoreBox");
+
+    let home = 0, away = 0;
+    function updateScore() {
+      home += Math.floor(Math.random() * 2); 
+      away += Math.floor(Math.random() * 2);
+      scoreBox.textContent = Home ${home} - ${away} Away;
+    }
+
+    setInterval(updateScore, 3000);
+  </script>
+</body>
+</html>
